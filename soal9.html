@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 9</title>
+</head>
+<body>
+
+    <h2>Daftar Nama Bulan</h2>
+
+    <ul id="bulan-list"></ul>
+
+    <script>
+        var namaBulan = [
+            "Januari",
+            "Februari",
+            "Maret",
+            "April",
+            "Mei",
+            "Juni",
+            "Juli",
+            "Agustus",
+            "September",
+            "Oktober",
+            "November",
+            "Desember"
+        ];
+
+        var bulanList = document.getElementById("bulan-list");
+
+        for (var i = 3; i < namaBulan.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.textContent = namaBulan[i];
+            bulanList.appendChild(listItem);
+        }
+    </script>
+
+</body>
+</html>
